@@ -6100,7 +6100,7 @@ jobs:
               if [ -s "$FRAG" ]; then
                 FRAG_FLAG="--defconfig_fragment=//common:arch/arm64/configs/ksu.fragment"
               fi
-              LTO_FLAG="--lto=thin"
+              LTO_FLAG="--lto=none"
               if [ "${{ inputs.kernel_version }}" = "6.12" ]; then
                 LTO_FLAG="--lto=none"
               fi
